@@ -12,6 +12,8 @@ public class Quiz {
         this.questions = new ArrayList<Question>(Arrays.asList(q));
     }
 
+    public Quiz(){};
+
     public void startQuiz(){
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < questions.size(); i++) {

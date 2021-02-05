@@ -1,7 +1,5 @@
 package studios.funWithQuizzes;
 
-import java.util.ArrayList;
-
 public class QuizRunner {
 
     public static void main(String[] args) {
@@ -15,6 +13,8 @@ public class QuizRunner {
         });
 
         quiz.addQuestion(new MultiChoice("Question4", "Answer1", new String[] {"nonAnswer1", "nonAnswer2"}));
+        quiz.addQuestion((new ShortAnswer("Short Question")));
+        quiz.addQuestion(new LinearScale("Linear Scale Question", 5,4,8));
 
         quiz.startQuiz();
         quiz.gradeQuiz();
